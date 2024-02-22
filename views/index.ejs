@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .container {
+        text-align: center;
+
+        margin-top: 50px;
+
+    }
+
+    .heading {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+
+    }
+
+    .logout-btn {
+        background-color: #f44336;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .logout-btn:hover {
+        background-color: #d32f2f;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="heading">hello world by <%=devName %>
+        </h1>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+</body>
+
+</html>
